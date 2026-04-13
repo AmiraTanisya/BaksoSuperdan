@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f5f5f5;
+}
+
+/* Judul */
+h1 {
+  margin-top: 20px;
+}
+
+/* Menu container */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Tombol menu */
+.btn-menu {
+  padding: 15px;
+  width: 140px;
+  border: none;
+  border-radius: 12px;
+  background: #4CAF50;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+/* Hover efek */
+.btn-menu:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+/* Box pesanan */
+.pesanan {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Item pesanan */
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 8px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+/* Tombol qty */
+.qty-btn {
+  margin: 0 5px;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 5px;
+  background: #ddd;
+}
+
+/* Bagian bayar */
+.bayar {
+  margin-top: 20px;
+}
+
+/* Input */
+input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Tombol bayar */
+.bayar button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2196F3;
+  color: white;
+}
+
+.customer {
+  margin-top: 10px;
+}
+
+.customer input {
+  width: 200px;
+  padding: 8px;
+}
+
+.pesanan {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  width: 300px;
+  font-family: monospace;
+}
+
+/* garis */
+hr {
+  border: 1px dashed #000;
+}
+
+/* item struk */
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* MODE PRINT */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .pesanan, .pesanan * {
+    visibility: visible;
+  }
+
+  .pesanan {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+.pesanan {
+  width: 280px;
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  font-family: monospace;
+  border-radius: 10px;
+}
+
+.pesanan p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.bayar button {
+  margin-top: 5px;
+}
