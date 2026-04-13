@@ -153,3 +153,8 @@ hr {
 .bayar button {
   margin-top: 5px;
 }
+
+body {
+  max-width: 500px;
+  margin: auto;
+}
